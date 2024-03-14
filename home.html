@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="sustainbite-favicon-color.png">
+    <style>
+        /* CSS for styling the page */
+        @font-face {
+            font-family: 'Arimo'; /* Name you want to give to your font */
+            src: url('C:/Users/DELL/CSI/Arimo.ttf') format('truetype'); /* Path to your font file */
+            font-weight: normal; /* Font weight */
+            font-style: normal; /* Font style */
+        }
+
+
+        body {
+            font-family: 'Arimo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#FCF7FF;
+        }
+        @font-face {
+            font-family: 'Arbutus'; /* Name you want to give to your font */
+            src: url('C:/Users/DELL/CSI/Arbutus.ttf') format('truetype'); /* Path to your font file */
+            font-weight: normal; /* Font weight */
+            font-style: normal; /* Font style */
+        }
+
+        header {
+            background-color: #8BE8E5;
+            padding: 10px;
+            flex: 0 0 20%;
+        }
+        nav {
+            background-color: #A084E8;
+            padding: 10px;
+            font-family: 'Arimo', sans-serif;
+            text-align: center;
+            flex: 0 0 20%;
+        }
+        nav a {
+            color: #786fe3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FCF7FF; /* You can change the color as needed */
+            color: #7851ab;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            color:#A084E8;
+            background-color:#aff9f8df; /* Darker shade for hover effect */
+        }
+        header img {
+            width: 320px; /* Adjust the width as needed */
+            height: 50px; /* Maintain aspect ratio */
+            display: block; /* Remove any default margins */
+            justify-content: left;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #8BE8E5;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .testimonials {
+            background-color: #9b89b387;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-y: auto; /* Add scrollbars if content exceeds height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            font-size: 28px; /* Adjust the font size as needed */
+            color: #7238bd; /* Text color for headings */
+            margin-bottom: 20px; /* Add space below the headings */
+            text-align: center; /* Center-align the headings */
+            font-family: 'Arbutus', sans-serif; /* Apply custom font */
+        }
+        p {
+            font-size: 16px; /* Adjust the font size as needed */
+            color: #333; /* Text color for paragraph */
+            line-height: 1.5; /* Set the line height for better readability */
+            font-family: 'Arimo', sans-serif; /* Apply custom font */
+        }
+
+        .testimonial {
+            width: 80%; /* Set the width of each testimonial block */
+            margin-bottom: 20px;
+            border-bottom: 1px solid #9B89B3;
+            padding-bottom: 10px;
+            display: none; /* Initially hide all testimonials */
+        }
+
+        .testimonial.active {
+            display: block; /* Display the active testimonial */
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-author {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        /* CSS for styling the navigation buttons */
+        .navigation {
+            margin-top: 10px;
+            position: relative; 
+        }
+        .prev, .next {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 5px;
+            color: #333;
+            position: absolute; /* Position the buttons absolutely within the container */
+            bottom: 10px; /* Adjust the vertical position as needed */
+        }
+        .prev {
+            left: 10px; /* Position the "Previous" button on the left */
+        }
+        .next {
+            right: 10px; /* Position the "Next" button on the right */
+        }
+
+        .prev.disabled, .next.disabled {
+            pointer-events: none;
+            opacity: 0.5
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .prev.disabled:hover, .next.disabled:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sustainbite-high-resolution-logo-transparent.png">
+    </header>
+    <nav>
+        <a href="home.html" class="button">Home</a>
+        <a href="Mission.html" class="button">Mission</a>
+        <a href="programs.html" class="button">Programs</a>
+        <a href="contact.html" class="button">Contact</a>
+    </nav>
+    <section>
+        <aside>
+            <h2>About Us</h2>
+            <p>At SustainBite, we believe in the power of food to nourish communities, promote sustainability, and foster well-being.<br>As a local non-profit organization dedicated to tackling food insecurity and promoting healthy eating habits, we strive to make a meaningful difference in the lives of individuals and families within our community.</p>
+        </aside>
+        <div class="testimonials">
+            <div class="testimonial active">
+                <p>"The support I received from this organization truly changed my life. I am forever grateful."</p>
+                <p class="testimonial-author">- John Doe</p>
+                
+            </div>
+            <div class="testimonial">
+                <p>"Thanks to the efforts of this organization, our community is thriving and more connected than ever."</p>
+                <p class="testimonial-author">- Jane Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        <div class="navigation">
+            <span class="prev disabled" onclick="prevTestimonial()">&#10094; Prev</span>
+            <span class="next" onclick="nextTestimonial()">Next &#10095;</span>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Local Non-Profit Organization. All rights reserved.</p>
+    </footer>
+    <script>
+        let currentTestimonialIndex = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                if (i === index) {
+                    testimonial.classList.add('active');
+                } else {
+                    testimonial.classList.remove('active');
+                }
+            });
+        }
+
+        function updateButtons() {
+            if (currentTestimonialIndex === 0) {
+                prevButton.classList.add('disabled');
+            } else {
+                prevButton.classList.remove('disabled');
+            }
+
+            if (currentTestimonialIndex === testimonials.length - 1) {
+                nextButton.classList.add('disabled');
+            } else {
+                nextButton.classList.remove('disabled');
+            }
+        }
+
+        function nextTestimonial() {
+            if (currentTestimonialIndex < testimonials.length - 1) {
+                currentTestimonialIndex++;
+                showTestimonial(currentTestimonialIndex);
+                updateButtons();
+            }
+        }
+
+        function prevTestimonial() {
+            if (currentTestimonialIndex > 0) {
+                currentTestimonialIndex--;
+                showTestimonial(currentTestimonialIndex);
+                updateButtons();
+            }
+        }
+
+        showTestimonial(currentTestimonialIndex);
+        updateButtons();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="sustainbite-favicon-color.png">
+    <style>
+        /* CSS for styling the page */
+        @font-face {
+            font-family: 'Arimo'; /* Name you want to give to your font */
+            src: url('C:/Users/DELL/CSI/Arimo.ttf') format('truetype'); /* Path to your font file */
+            font-weight: normal; /* Font weight */
+            font-style: normal; /* Font style */
+        }
+
+
+        body {
+            font-family: 'Arimo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#FCF7FF;
+        }
+        @font-face {
+            font-family: 'Arbutus'; /* Name you want to give to your font */
+            src: url('C:/Users/DELL/CSI/Arbutus.ttf') format('truetype'); /* Path to your font file */
+            font-weight: normal; /* Font weight */
+            font-style: normal; /* Font style */
+        }
+
+        header {
+            background-color: #8BE8E5;
+            padding: 10px;
+            flex: 0 0 20%;
+        }
+        nav {
+            background-color: #A084E8;
+            padding: 10px;
+            font-family: 'Arimo', sans-serif;
+            text-align: center;
+            flex: 0 0 20%;
+        }
+        nav a {
+            color: #786fe3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            flex: 1;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FCF7FF; /* You can change the color as needed */
+            color: #7851ab;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            color:#A084E8;
+            background-color:#aff9f8df; /* Darker shade for hover effect */
+        }
+        header img {
+            width: 320px; /* Adjust the width as needed */
+            height: 50px; /* Maintain aspect ratio */
+            display: block; /* Remove any default margins */
+            justify-content: left;
+            margin: 10px;
+        }
+        h2 {
+            font-size: 28px; /* Adjust the font size as needed */
+            color: #7238bd; /* Text color for headings */
+            margin-bottom: 20px; /* Add space below the headings */
+            text-align: center; /* Center-align the headings */
+            font-family: 'Arbutus', sans-serif; /* Apply custom font */
+        }
+
+        footer {
+            background-color: #8BE8E5;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-left: 150px;
+            display: flex; /* Use flexbox */
+            justify-content: space-between; /* Evenly distribute items along the main axis */
+            align-items: center; /* Center-align items along the cross axis */
+            margin-bottom: 20px; /* Add space below the icons */
+        }
+        .social-icons a {
+            flex: 1; /* Each icon should take equal space */
+            margin: 0 5px; /* Add margin between icons */
+        }
+        .social-icons img {
+            width: 40px; /* Set the width of icons */
+            height: 40px; /* Set the height of icons */
+        }
+        address{
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sustainbite-high-resolution-logo-transparent.png">
+    </header>
+    <nav>
+        <a href="home.html" class="button">Home</a>
+        <a href="Mission.html" class="button">Mission</a>
+        <a href="programs.html" class="button">Programs</a>
+        <a href="contact.html" class="button">Contact</a>
+    </nav>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/your_facebook_page" target="_blank"><img src="facebook.svg" alt="Facebook"></a>
+                <a href="https://www.google.com/gmail/about/" target="_blank"><img src="gmail.svg" alt="Gmail"></a>
+                <a href="https://twitter.com/your_twitter_page" target="_blank"><img src="twitter-x.svg" alt="Twitter"></a>
+                <a href="https://www.instagram.com/your_instagram_page" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
+            </div>
+            <br>
+            <h2>Address</h2>
+            <address>
+                SustainBite<br>
+                Road No:2<br>
+                Banjara Hills,Telangana, 500008<br>
+                India
+            </address>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 SustainBite. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="icon" type="image/png" href="sustainbite-favicon-color.png">
+    <style>
+        /* CSS for styling the page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .left-section, .right-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex: 1;
+        }
+        .left-section {
+            background-color: #8BE8E5; /* Blue color for left section */
+            padding: 20px;
+        }
+        .right-section {
+            background-color: #7E80FF; /* Green color for right section */
+            padding: 20px;
+            transition: transform 1.0s ease; /* Smooth sliding transition */
+            margin-left: -20px; /* Offset initial position */
+        }
+        .container:hover .right-section {
+            transform: translateX(20px); /* Slide right on hover */
+        }
+        .logo {
+            width: 320px; /* Adjust according to your logo size */
+            height: 280px; /* Adjust according to your logo size */
+        }
+        .company-name {
+            color: #8BE8E5;  
+            text-align: center;
+        }
+        @font-face {
+            font-family: 'Arimo'; /* Name you want to give to your font */
+            src: url('C:/Users/DELL/CSI/Arimo.ttf') format('truetype'); /* Path to your font file */
+            font-weight: normal; /* Font weight */
+            font-style: normal; /* Font style */
+        }
+        .typewriter h1 {
+            color: #aff9f8df;;
+            font-family:'Arimo';
+            overflow: hidden;
+            border-right: .15em solid orange; 
+            white-space: nowrap;
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .05em; /* Adjust as needed */
+            animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #8BE8E5 }
+        }
+        .next-button {
+            background-color: #8BE8E5;
+            color: #7E80FF;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-family:'Arimo';
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .next-button:hover {
+            background-color: #aaabf0;
+            color:#8BE8E5;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="logo-no-background.png" alt="Logo" class="logo">
+        </div>
+        <div class="right-section">
+            <h1 class="company-name">
+                <div class="typewriter">
+                    <h1>SustainBite</h1>
+                </div>
+            </h1>
+            <button class="next-button" onclick="redirectToNonProfitPage()">Next</button>
+        </div>
+    </div>
+    <script>
+        function redirectToNonProfitPage() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>
